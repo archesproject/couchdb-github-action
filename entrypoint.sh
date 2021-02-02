@@ -16,7 +16,7 @@ echo "Environments"
 echo "- curl : $(which curl)"
 
 echo "Starting CouchDB..."
-docker run --name my-couchdb-app -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=password -d couchdb:$COUCHDB_VERSION
+docker run --name my-couchdb-app -p 5984:5984 -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=admin -d couchdb:$COUCHDB_VERSION
 docker ps
 
 # FIXME can't connect. reason is unknown.
